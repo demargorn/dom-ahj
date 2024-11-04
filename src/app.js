@@ -18,3 +18,5 @@ setInterval(() => {
    }
    cellsArray[randomIndex].appendChild(image);
 }, 1000);
+
+

@@ -5,11 +5,12 @@
    "main": "app.js",
    "scripts": {
       "lint": "eslint .",
-      "test": "jest",
       "lint:fix": "eslint . --fix",
       "build": "webpack --mode production",
       "build:dev": "webpack --mode development",
-      "serve": "webpack serve"
+      "serve": "webpack serve",
+      "test": "jest",
+      "coverage": "jest --coverage"
    },
    "keywords": [],
    "author": "demargorn",
