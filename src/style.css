@@ -1,0 +1,33 @@
+body {
+   background: #efe6dd;
+   text-align: center;
+}
+.cells {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 50px;
+   margin-left: auto;
+   margin-right: auto;
+   width: 600px;
+}
+
+.cell:nth-child(1n + 5) {
+   margin-top: 5px;
+}
+
+.cell:nth-child(2n) {
+   margin-left: 5px;
+   margin-right: 5px;
+}
+
+.cell:nth-child(4n) {
+   margin-left: 5px;
+}
+
+.cell {
+   box-sizing: border-box;
+   border: 2px solid #231f20;
+   background: #f3dfa2;
+   width: 130px;
+   height: 130px;
+}
