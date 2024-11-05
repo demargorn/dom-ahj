@@ -1,4 +1,11 @@
 const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min) + min);
+const boardSize = 16;
+
+for (let i = 0; i < boardSize; i += 1) {
+   const cell = document.createElement('div');
+   cell.classList.add('cell');
+   document.querySelector('.cells').appendChild(cell);
+}
 
 const cellsArray = Array.from(document.querySelectorAll('.cell'));
 const image = document.createElement('img');
@@ -18,5 +25,3 @@ setInterval(() => {
    }
    cellsArray[randomIndex].appendChild(image);
 }, 1000);
-
-
